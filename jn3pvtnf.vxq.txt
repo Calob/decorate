@@ -1,0 +1,77 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch sherwin_he
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .classpath
+#	new file:   .project
+#	new file:   WebContent/META-INF/MANIFEST.MF
+#	new file:   WebContent/WEB-INF/bean-servlet.xml
+#	new file:   WebContent/WEB-INF/lib/commons-dbcp.jar
+#	new file:   WebContent/WEB-INF/lib/commons-io-2.4.jar
+#	new file:   WebContent/WEB-INF/lib/commons-lang3-3.1.jar
+#	new file:   WebContent/WEB-INF/lib/commons-logging.jar
+#	new file:   WebContent/WEB-INF/lib/commons-pool.jar
+#	new file:   WebContent/WEB-INF/lib/dom4j.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate-annotations.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate-commons-annotations.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate3.jar
+#	new file:   WebContent/WEB-INF/lib/javax.servlet.jar
+#	new file:   WebContent/WEB-INF/lib/javax.transaction.jar
+#	new file:   WebContent/WEB-INF/lib/jstl-1.2.jar
+#	new file:   WebContent/WEB-INF/lib/log4j-1.2.17.jar
+#	new file:   WebContent/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar
+#	new file:   WebContent/WEB-INF/lib/org.apache.commons.collections.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.beans-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.context-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.core-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.expression-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.jdbc-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.orm-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.transaction-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar
+#	new file:   WebContent/WEB-INF/lib/slf4j-api-1.5.8.jar
+#	new file:   WebContent/WEB-INF/lib/slf4j-log4j12-1.5.8.jar
+#	new file:   WebContent/WEB-INF/lib/spring.jar
+#	new file:   WebContent/WEB-INF/web.xml
+#	new file:   WebContent/images/403.jpg
+#	new file:   WebContent/images/404.jpg
+#	new file:   WebContent/images/500.jpg
+#	new file:   WebContent/images/IBM-logo.png
+#	new file:   WebContent/images/copyright.png
+#	new file:   WebContent/index.jsp
+#	new file:   WebContent/jsp/common/error-403.jsp
+#	new file:   WebContent/jsp/common/error-404.jsp
+#	new file:   WebContent/jsp/common/error-500.jsp
+#	new file:   WebContent/jsp/common/errorpage.jsp
+#	new file:   WebContent/jsp/common/includeTld.jsp
+#	new file:   WebContent/jsp/common/jsHead.jsp
+#	new file:   WebContent/jsp/customer/dashboard.jsp
+#	new file:   WebContent/readme/add-jar.file
+#	new file:   decorate
+#	new file:   decoration.sql
+#	new file:   src/main/java/application.properties
+#	new file:   src/main/java/applicationContext.xml
+#	new file:   src/main/java/com/dec/common/config/Global.java
+#	new file:   src/main/java/com/dec/common/utils/BusinessException.java
+#	new file:   src/main/java/com/dec/common/utils/CustomSimpleMappingExceptionResolver.java
+#	new file:   src/main/java/com/dec/common/utils/PropertiesLoader.java
+#	new file:   src/main/java/com/dec/common/utils/StringUtils.java
+#	new file:   src/main/java/com/dec/common/utils/SystemException.java
+#	new file:   src/main/java/com/dec/controller/CustomerController.java
+#	new file:   src/main/java/com/dec/dao/CustomerDao.java
+#	new file:   src/main/java/com/dec/dao/impl/CustomerDaoImpl.java
+#	new file:   src/main/java/com/dec/model/Customer.java
+#	new file:   src/main/java/com/dec/model/customer.hbm.xml
+#	new file:   src/main/java/com/dec/persistent/BaseDao.java
+#	new file:   src/main/java/com/dec/persistent/BaseDaoImpl.java
+#	new file:   src/main/java/com/dec/persistent/BaseService.java
+#	new file:   src/main/java/com/dec/persistent/BaseServiceImpl.java
+#	new file:   src/main/java/com/dec/persistent/Page.java
+#	new file:   src/main/java/com/dec/service/CustomerService.java
+#	new file:   src/main/java/com/dec/service/impl/CustomerServiceImpl.java
+#
+

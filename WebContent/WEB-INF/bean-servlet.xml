@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/mvc  
+    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<mvc:annotation-driven />
+
+	<mvc:resources location="/images/" mapping="/images/**" />
+	<mvc:resources location="/info/" mapping="/info/**" />
+	<mvc:resources location="/javascript/" mapping="/javascript/**" />
+	<mvc:resources location="/css/" mapping="/css/**" />
+	<mvc:resources location="/dojoroot/" mapping="/dojoroot/**" />
+
+	<!-- 启用spring mvc 注解 -->
+	<context:annotation-config />
+
+	<!-- 设置使用注解的类所在的包 -->
+	<context:component-scan base-package="com.dec"></context:component-scan>
+
+	<!-- 完成请求和注解POJO的映射 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/jsp/" /><!-- 跳转页面的前缀路径如 /web-inf/jsp/ -->
+		<property name="suffix" value=".jsp"></property><!-- 跳转页面后缀 如 helloWorld.jsp -->
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="10000000"></property>
+	</bean>
+
+	<!--拦截器配置 -->
+	<mvc:interceptors>
+		<bean
+			class="org.springframework.orm.hibernate3.support.OpenSessionInViewInterceptor">
+			<property name="sessionFactory" ref="sessionFactory" />
+			<property name="flushMode" value="1" />
+		</bean>
+	</mvc:interceptors>
+
+	<!-- 通用的mvc异常处理器 -->
+	<!-- <bean id="exceptionResolver"
+		class="com.dec.common.utils.CustomSimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="com.dec.common.utils.SystemException">../jsp/common/error-500</prop>
+				<prop key="com.dec.common.utils.BusinessException">../jsp/common/errorpage</prop>
+				<prop key="java.lang.Exception">../jsp/common/errorpage</prop>
+			</props>
+		</property>
+	</bean> -->
+</beans>
