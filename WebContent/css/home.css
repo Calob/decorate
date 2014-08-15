@@ -1,0 +1,307 @@
+
+/*------content top style---------*/
+
+.home_container{
+	width:1170px;
+	display:box;
+	box-pack:center;
+	box-align:center;   
+	
+    display: -webkit-box; 
+    -webkit-box-orient:vertical;
+      
+    background-image: url("../images/progress_repeat.png");
+    padding: 20px 0px;
+    margin:0 auto;    
+}
+#topContent,#bottomContent{
+   /*  display: -moz-box; */
+    -moz-box-pack:center;
+	-moz-box-align:center;
+	
+    display: -webkit-box;
+    -webkit-box-pack:center;
+	-webkit-box-align:center;
+	
+	box-pack:center;
+	box-align:center;
+	
+    column-count:2;
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    box-orient:horizontal; 
+    -moz-box-orient:horizontal;
+    -webkit-box-orient:horizontal;
+    margin-bottom: 15px;
+    
+}
+#topContent{
+	box-flex:2.0;
+	-moz-box-flex:1.0;
+	-webkit-box-flex:1.0;
+}
+#bottomContent{
+	box-flex:2.0;
+	-moz-box-flex:2.0;
+	-webkit-box-flex:2.0;
+}
+.home_container #quickLink,.home_container #viewStore{
+	box-flex:1.0;
+	-moz-box-flex:1.0;
+	-webkit-box-flex:1.0;
+	 margin-right: 15px;
+}
+.home_container #notice,.home_container #orderManage{
+	-moz-box-flex:2.0;
+	-webkit-box-flex:2.0;
+}
+.home_container #quickLink,
+.home_container #notice,
+.home_container #viewStore,
+.home_container #orderManage{
+    width: 45%;
+    width:46em !important;   
+    padding: 10px;
+    border:1px solid #DFDFDF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    
+    -moz-box-pack:center;
+	-moz-box-align:center;
+    -webkit-box-pack:center;
+	-webkit-box-align:center;
+	
+	box-pack:center;
+	box-align:center;
+    -moz-box-sizing: content-box;  
+    -webkit-box-sizing: content-box; 
+    -o-box-sizing: content-box; 
+    -ms-box-sizing: content-box; 
+    box-sizing:content-box; 
+}
+
+.home_container div h2{
+    color: #272822;
+    font:bold 18px "Microsoft YaHei",微软雅黑; 
+    margin: 0;
+    padding: 10px;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+.home_container #quickLink ul{
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    position:relative;
+}
+.home_container #quickLink li{	
+	list-style: none outside none;
+	float: left;
+	width: 115px;
+	padding: 80px 5px 40px 5px;
+	background-color: rgb(244, 244, 244);	
+	margin-left: 10px;
+	text-align: center;
+}
+.home_container #quickLink #plus{
+    background-image: url("../images/plus.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+.home_container #quickLink #catalog{
+    background-image: url("../images/catalog.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+.home_container #quickLink #library{
+    background-image: url("../images/library.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+.home_container #quickLink #setting{
+    background-image: url("../images/setting.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+.home_container #quickLink #plus a{
+    color: red;
+}
+.home_container #quickLink #catalog a{
+    color: #33B7E5;
+}
+.home_container #quickLink #library a{
+    color: #99CC00;
+}
+.home_container #quickLink #setting a{
+    color: #FCB72A;
+}
+.home_container div li a{
+    text-decoration: none;
+    color: #272822;
+    font:14px "Microsoft YaHei",微软雅黑; 
+}
+.home_container div li a:hover{
+	color:#FF2424;
+}
+.home_container #notice ul{
+	padding:20px 0;
+	margin:0;
+	
+}
+.home_container #notice li{
+    list-style: none;
+    line-height: 35px;
+    background-image: url("../images/notice.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+.home_container #notice li a{
+    padding-left: 20px;
+}
+.home_container #notice li:hover{
+    background-color: #C4E9EF;
+    cursor:pointer;
+}
+.clearfix{
+    clear: both;
+    overflow: hidden;
+    zoom:1;
+}
+
+/*--------content bottom style---------*/
+.home_container #viewStore{
+    margin-right: 15px;
+}
+.home_container #viewStore ul{
+    margin: 0;
+    padding: 20px 0;
+}
+.home_container #viewStore li{
+    list-style: none;
+    width: 215px;
+	padding: 20px;
+    float: left;
+    margin: 10px;
+}
+.home_container #viewStore #box{
+    background-image: url("../images/box.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-color: #F4F4F4;
+}
+.home_container #viewStore #catalogBig{
+    background-image: url("../images/catalogBig.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-color: #F4F4F4;
+}
+.home_container #viewStore #person{
+    background-image: url("../images/person.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-color: #5AC7DC;
+    color: white;
+}
+.home_container #viewStore #money{
+    background-image: url("../images/money.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-color: #BBBBBB;
+    color: white;
+}
+.home_container #viewStore #box span,
+.home_container #viewStore #catalogBig span{
+    color: #515151;
+}
+.home_container #viewStore #person a,
+.home_container #viewStore #money a{
+    color: white;
+}
+.home_container #viewStore li a{
+    font:18px "Microsoft YaHei",΢���ź�; 
+    line-height: 35px;
+}
+
+.home_container #viewStore li span{
+    font: bold 48px Arial;
+}
+
+.home_container #orderManage p{
+    font:14px "Microsoft YaHei"; 
+}
+.home_container #orderManage #order{
+    width:98%;
+    height: 275px;;
+}
+.home_container #orderManage #time_range{
+    float: right;
+    padding:10px 0 10px 0;
+}
+.home_container #orderManage p b{
+    font: 32px Arial;
+    color: #E97100;
+}
+.home_container #orderManage p span{
+    margin: 0 30px;
+}
+
+.home_container #to-do-list{
+    margin-bottom: 15px;
+    padding: 10px;
+    border:1px solid #DFDFDF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.home_container #to-do-list ul{
+    margin: 0;
+    padding: 15px 0;
+}
+.home_container #to-do-list li{
+    list-style: none;
+    width: 230px;
+    padding: 20px;
+    float: left;
+    margin-right: 15px;
+}
+.home_container #to-do-list #productCheck{
+    background-image: url("../images/box.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #F4F4F4;
+}
+.home_container #to-do-list #catalogCheck{
+    background-image: url("../images/moneyCopy.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #F4F4F4;
+}
+.home_container #to-do-list #personCheck{
+    background-image: url("../images/personCheck.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #F4F4F4;
+}
+.home_container #to-do-list #resign{
+    background-image: url("../images/resign.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #F4F4F4;
+}
+.home_container #to-do-list span{
+    color: #515151;
+}
+
+.home_container #to-do-list li a{
+    font:18px "Microsoft YaHei",微软雅黑; 
+    line-height: 40px;
+
+}
+
+.home_container #to-do-list li span{
+    font: bold 48px Arial;
+}

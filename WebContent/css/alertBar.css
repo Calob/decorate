@@ -1,0 +1,41 @@
+#alertBar {
+	position:fixed;
+	top:0px;
+	border-radius: 3px;
+	left:40%;
+	padding:5px;
+}
+#alertBarClose {
+	background: transparent;
+	float: right;
+	font-size: 18px;
+	color: #666666;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #555555;
+	position: relative;
+	border: 0px;
+	padding: 0px 4px;
+	margin:0px;
+}
+#alertBarClose:hover, #alertBarClose:focus {
+	color: #000000;
+	cursor: pointer;
+	opacity: 0.4;
+}
+#alertBarInfo {
+	margin:5px auto;
+	font:16px 'Miscosoft YaHei';
+	padding-top:5px;
+	text-align:center;
+	font-weight:bold;
+}
+.alertBarError {
+	background-color:#FFA0A0;
+	border-color:#FFA0A0;
+	color:#DE0000;
+}
+.alertBarSuccess {
+	background-color:#DFF0DB;
+	border-color:#D6E9C6;
+	color:#468847;
+}

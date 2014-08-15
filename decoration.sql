@@ -17,3 +17,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 insert into customer values(1001, 'zhouxx', '111111', '1234567890', 'zhouxx@xx.com', '2014-08-13 18:02:01');
+insert into customer values(1002, 'chent', '111111', '1234567890', 'ct@xx.com', '2014-08-13 18:02:01');
+insert into customer values(1003, 'xiongpc', '111111', '1234567890', 'xpc@xx.com', '2014-08-13 18:02:01');
+insert into customer values(1004, 'hesw', '111111', '1234567890', 'hsw@xx.com', '2014-08-13 18:02:01');
+insert into customer values(1005, 'dingsy', '111111', '1234567890', 'dsy@xx.com', '2014-08-13 18:02:01');

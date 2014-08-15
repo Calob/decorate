@@ -7,7 +7,8 @@
 <head>
 
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<title>
+	</title>
 	<%@ include file="jsp/common/jsHead.jsp" %>
 	<script type="text/javascript" src="javascript/login.js"></script>
 	<script type="text/javascript" src="javascript/script.js"></script>
@@ -18,16 +19,16 @@
 <div id="body">
 
 <div  class="container">
-	<form  action="customer/cusInfoDetail" method="post">
+	<form  id="login_form" action="customer/cusInfoDetail" method="post">
 		<ul>
 			<li id="login_title">
-				装潢设计有限公司 V1.0
+				IBM电商管理平台 V1.0
 			</li>
 			<li id="login_regiter_title">
 				登录/注册
 			</li>
 			<li>
-				<input id="login_username" type="text" placeholder="用户名"  class="login_text" name='customerName'  value='<c:if test="${not empty param.login_error}" >  
+				<input id="login_username" type="text" placeholder="用户名"  class="login_text" name='j_username'  value='<c:if test="${not empty param.login_error}" >  
                         <c:out value="${SPRING_SECURITY_LAST_USERNAME}"/></c:if>' required>
 			</li>
 			<li>
@@ -40,7 +41,7 @@
 				<input class="login_input" id="submit_login" type="submit" value="登录" name="submit">
 			</li>
 			<li id="register_title">
-				立即注册成为会员，愉快的进行购物
+				立即注册成为会员，开启我的商店
 			</li>
 			<li>
 				<input class="login_input" id="submit_register" type="button" value="注册" name="register">
@@ -51,7 +52,7 @@
 			</li>
 			<li id="copyright_logo">
 				<img id="copyright" src="images/copyright.png" />
-				<img id="logo" src="images/IBM-logo.png" />
+				<img id="logo" src="../images/IBM-logo.png" />
 			</li>
 		</ul>
 	</form>
