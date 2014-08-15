@@ -24,7 +24,6 @@ import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-import com.dec.common.config.Global;
 import com.dec.common.utils.StringUtils;
 
 /**

@@ -3,21 +3,25 @@ DROP DATABASE IF EXISTS `decoration`;
 CREATE DATABASE IF NOT EXISTS `decoration` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `decoration`;
 
+CREATE TABLE IF NOT EXISTS `CUSTOMER` (
+  `CUSTOMER_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CUSTOMER_NAME` varchar(50) NOT NULL,
+  `PASSWORD` varchar(70) NOT NULL,
+  `ID_NUMBER` varchar(20) NOT NULL,
+  `EMAIL` varchar(50) NOT NULL,
+  `SALT` varchar(20) NOT NULL,
+  `RESET_END_TIME` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `CONFIRMATION` varchar(100) NOT NULL,
+  `LASTUPDATE` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`CUSTOMER_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
 
--- 导出  表 decoration.customer 结构
-DROP TABLE IF EXISTS `customer`;
-CREATE TABLE IF NOT EXISTS `customer` (
-  `customer_id` int NOT NULL,
-  `customer_name` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `id_number` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `lastupdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`customer_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-insert into customer values(1001, 'zhouxx', '111111', '1234567890', 'zhouxx@xx.com', '2014-08-13 18:02:01');
-insert into customer values(1002, 'chent', '111111', '1234567890', 'ct@xx.com', '2014-08-13 18:02:01');
-insert into customer values(1003, 'xiongpc', '111111', '1234567890', 'xpc@xx.com', '2014-08-13 18:02:01');
-insert into customer values(1004, 'hesw', '111111', '1234567890', 'hsw@xx.com', '2014-08-13 18:02:01');
-insert into customer values(1005, 'dingsy', '111111', '1234567890', 'dsy@xx.com', '2014-08-13 18:02:01');
+INSERT INTO `CUSTOMER` (`CUSTOMER_ID`, `CUSTOMER_NAME`, `PASSWORD`, `ID_NUMBER`, `EMAIL`, `SALT`, `RESET_END_TIME`, `CONFIRMATION`, `LASTUPDATE`) VALUES
+	(47, 'hesw', '22f3c45b2ef538d24aa08b6f81848c67', '341282199005111856', 'momentey@126.com', 'aGRPg4o4FxpU', '2013-09-23 12:44:54', '55935303be629a2503fbf4be38643c47', '2013-09-23 12:44:54'),
+	(48, 'yanzg', '87c014da283f61c8cee66d0d6290a8dc', '13020119890101821X', 'zhigang.y09@gmail.com', '9X32n7aBE173', NULL, '3d9f4f63c7e5d5d421a78a4571d5499b', '2013-09-23 12:44:54'),
+	(49, 'xiongpc', '5ab09e2caa5bc620ae6f0ebf771bd1c8', '360101199201015896', 'xpc_kacl@163.com', 'a6EO7Sjr1jcH', NULL, 'eb1a5f67c18f3a79505f15a192f88ebd', '2013-09-23 12:44:54'),
+	(50, 'wujf', 'ea9e0da163dbbb80809c5c372549378c', '330701199104042435', '1198884607@qq.com', 'WXKdGyziugFS', NULL, '217c680c2b10439176f192500005d9fc', '2013-09-23 12:44:54'),
+	(51, 'zhangmc', '0893f35ddd4495fa3dcca3d6a443a4c5', '520101199104048370', '1056701260@qq.com', 'NLrNUh9UjtNp', NULL, '847102f2c9343015f039f3a7244b46b9', '2013-09-23 12:44:54'),
+	(52, 'abc', '232ca9e4756a8db36d77e04ab0262b7d', '360111199302100996', 'abc@163.com', 'zcEwecvydDuR', NULL, '7cb949f8ae44490ab52cc46c0b630d3c', '2013-09-23 12:44:54'),
+	(53, '21351193', '799f9af4c452b0bd55f5b0d5e4f940e7', '610528199009188926', 'javin@163.com', 'K95AdUBt4JlP', NULL, 'be32fb3b7de9b0ea836bc1ce1a0a95cd', '2013-09-23 12:44:54');

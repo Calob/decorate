@@ -41,3 +41,6 @@ commons-pool.jar
 javax.transaction.jar
 org.springframework.transaction-3.0.5.RELEASE.jar
 org.springframework.expression-3.0.5.RELEASE.jar				--- 初次调试时提示NoClassDefFoundError
+
+
+antlr-2.7.6.jar													---	注册时报错缺包

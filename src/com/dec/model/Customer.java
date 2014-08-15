@@ -15,10 +15,33 @@ public class Customer implements Serializable {
 	private String password;
 	private String idNumber;
 	private String email;
+	private String salt;
+	/** Merchant confirmation(consists the encryption of name,email and salt) */
+	private String confirmation;
+	private Timestamp resetEndTime;
 	private Timestamp lastupdate;
 	
-	public Customer() {}
-	
+	public String getSalt() {
+		return salt;
+	}
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+	public String getConfirmation() {
+		return confirmation;
+	}
+	public void setConfirmation(String confirmation) {
+		this.confirmation = confirmation;
+	}
+	public Timestamp getResetEndTime() {
+		return resetEndTime;
+	}
+	public void setResetEndTime(Timestamp resetEndTime) {
+		this.resetEndTime = resetEndTime;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 	public Integer getCustomerId() {
 		return customerId;
 	}
@@ -54,17 +77,6 @@ public class Customer implements Serializable {
 	}
 	public void setLastupdate(Timestamp lastupdate) {
 		this.lastupdate = lastupdate;
-	}
-	
-	@Override
-	public String toString()
-	{
-		return "Customer [customerId="   + customerId
-				+      ", customerName=" + customerName
-				+	   ", idNumber="     + idNumber
-				+      ", email="        + email
-				+      ", lastupdate="   + lastupdate
-				+"]";
 	}
 	
 }

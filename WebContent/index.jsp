@@ -44,7 +44,8 @@
 				立即注册成为会员，开启我的商店
 			</li>
 			<li>
-				<input class="login_input" id="submit_register" type="button" value="注册" name="register">
+<!-- 			<input class="login_input" id="submit_register" type="button" value="注册" name="register">	 -->	
+				<a href="jsp/guest/register.jsp">注册</a>
 			</li>
 			<li>	
 			<!-- 颜色 -->

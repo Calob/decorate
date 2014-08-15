@@ -5,11 +5,16 @@
 <hibernate-mapping package="com.dec.model">
 
 	<class name="Customer" table="CUSTOMER">
-		<id name="customerId" type="int" column="CUSTOMER_ID"></id>
+		<id name="customerId" type="int" column="CUSTOMER_ID">
+			<generator class="identity"></generator>
+		</id>
 		<property name="customerName" type="string" column="CUSTOMER_NAME"></property>
 		<property name="password" type="string" column="PASSWORD"></property>
 		<property name="idNumber" type="string" column="ID_NUMBER"></property>
 		<property name="email" type="string" column="EMAIL"></property>
+		<property name="salt" type="string" column="SALT" />
+		<property name="confirmation" type="string" column="CONFIRMATION" />
+		<property name="resetEndTime" type="timestamp" column="RESET_END_TIME" />
 		<property name="lastupdate" type="timestamp" column="LASTUPDATE"></property>
 	</class>
 
